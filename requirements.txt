@@ -1,0 +1,4 @@
+pycuda
+numpy
+opencv-python
+facenet-pytorch
