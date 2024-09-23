@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: face-detection
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: face-detection
+  template:
+    metadata:
+      labels:
+        app: face-detection
+    spec:
+      containers:
+      - name: face-detection
+        image: your-registry/face-detection:v1
+        resources:
+          limits:
+            nvidia.com/gpu: 1
+        volumeMounts:
+        - name: dev-video0
+          mountPath: /dev/video0
+      volumes:
+      - name: dev-video0
+        hostPath:
+          path: /dev/video0
