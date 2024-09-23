@@ -23,7 +23,7 @@ This repository implements a **real-time Face ID detection system** using **NVID
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/face-id-cudnn.git
+   git clone https://github.com/manojbusam/FaceID-Detection-cuDNN.git
    cd face-id-cudnn
    ```
 
