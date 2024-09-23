@@ -1,8 +1,4 @@
-###  Face ID Detection Using cuDNN Primitives
-
----
-
-# Face ID Detection System
+# Face ID Detection Using cuDNN
 
 This repository implements a **real-time Face ID detection system** using **NVIDIA's cuDNN** primitives for fast and efficient neural network operations, including convolution, ReLU, and pooling. The system detects a person’s face, extracts unique features, creates a face embedding (ID), and uses it for subsequent face recognition.
 
